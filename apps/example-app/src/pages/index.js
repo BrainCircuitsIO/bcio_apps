@@ -3,6 +3,7 @@ import axios from 'axios'
 
 import Layout from "../components/layout"
 import config from "../../../../config.json";
+import { Link } from "gatsby";
 
 const IndexPage = () => {
 
@@ -22,7 +23,9 @@ const IndexPage = () => {
   }
 
   return (<Layout>
-    <button onClick={callFunction}>Press me</button>
+    <button onClick={callFunction}>Press me and inspect browser console</button>
+    <br />
+    <Link to="/testd3/">D3 Example</Link>
   </Layout>)
 
 }
