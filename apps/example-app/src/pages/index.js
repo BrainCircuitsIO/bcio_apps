@@ -11,7 +11,7 @@ const IndexPage = () => {
     axios({
       method: 'get',
       crossDomain: true,
-      url: 'https://api.zetta.ai/wclee/info/api/v2/datastacks',
+      url: 'https://wclee.api.zetta.ai/info/api/v2/datastacks',
       headers: {
         'Content-Type': 'application/json',
         'Authorization': "Bearer " + config["FANC_AUTH_TOKEN"]
